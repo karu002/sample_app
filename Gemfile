@@ -1,31 +1,26 @@
 source 'https://rubygems.org'
 
+# RAILS
 gem 'rails', '3.2.12'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-# gem for database and testing
+# DEVELOPMENT GEMS
 group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails'
 	gem 'capybara'
 end
 
-# Gems used only for assets and not required
-# in production environments by default.
-
-# gem for html/css/js
+# HTML/CSS/JS
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
 
-# gem for jquery
+# JQUERY
 gem 'jquery-rails'
 
-# postgres for when pushed to heroku
+# POSTGRESQL FOR HEROKU (i.e. production)
 group :production do
 	gem 'pg'
 end

@@ -18,6 +18,7 @@ RSpec.configure do |config|
   # config.mock_with :flexmock
   # config.mock_with :rr
   
+  # Add dependency to capybara
   config.include Capybara::DSL
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
